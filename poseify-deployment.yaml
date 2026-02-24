@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: poseify
-        image: kanishkdoc/poseify:v1
+        image: kanishkdoc/poseify:v2
         ports:
         - containerPort: 80
