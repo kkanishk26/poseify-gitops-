@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: poseify
+  namespace: poseify
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: poseify
+  template:
+    metadata:
+      labels:
+        app: poseify
+    spec:
+      containers:
+      - name: poseify
+        image: kanishkdoc/poseify:v1
+        ports:
+        - containerPort: 80
