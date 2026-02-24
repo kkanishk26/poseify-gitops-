@@ -1,0 +1,46 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+
+# IDE
+.vscode/
+# -----------------------------
+# GitOps Repo Protection
+# -----------------------------
+
+# Application source (should NOT be inside GitOps repo)
+app/
+dist/
+build/
+
+# Docker artifacts
+*.tar
+*.gz
+*.zip
+
+# Terraform state (critical)
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Kubernetes temp files
+*.tmp
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
